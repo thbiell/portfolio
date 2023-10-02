@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta name="description"
+        content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations." />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Thiago Gabriel's Portfolio">
+    <meta itemprop="description"
+        content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+    <!-- Reference screenshot of updated site's header in place of content -->
+    <meta itemprop="image" content="assets/images/sharing-card.png">
+
+    <!-- Update favicon href attribute with image of yourself -->
+    <link rel="shortcut icon" href="assets/images/favicons.png" type="image/png" />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Thiago Gabriel's Portfolio</title>
+</head>
+
+<body>
+
+    <script>
+        const theme = localStorage.getItem("theme") || "dark";
+        document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+        <div class="menu-btn-container">
+            <div class="container">
+                <button type="button" class="menu-btn">menu</button>
+            </div>
+        </div>
+
+        <nav class="nav hidden">
+            <ol class="nav-items">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#work">My Work</a></li>
+                <li class="nav-item"><a href="#skills">My Skills</a></li>
+                <li class="nav-item">
+                    <a href="#contact" data-focused="last-focused">Contact</a>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="container">
+            <div class="header-textbox">
+                <!-- Replace with your name and job title -->
+                <h1 class="h1">
+                    Hi, I'm Thiago Gabriel<br />
+                    FullStack Developer
+                </h1>
+
+                <!-- Add a small introductory paragraph about yourself -->
+                <p class="header-text">
+                    A frontend software engineer and interface designer who builds UX
+                    rich accessible and performant websites.
+                </p>
+
+                <div class="header-btns">
+                    <a href="#contact" class="btn btn-cta">Hire me</a>
+                    <a href="#work" class="btn btn-secondary">See my work</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="work">
+            <div class="container">
+                <h2 class="h2" id="work">Projects</h2>
+                <div class="work-boxes">
+                    <div class="work-box">
+                        <div class="work-textbox">
+                            <!-- Add your project title here -->
+                            <h3 class="h3">Mexagex</h3>
+                            <!-- Add small description of your project  -->
+                            <p class="work-text">
+                                Mexagex is a real-time messaging app that offers a fast and efficient communication
+                                experience. With features like image sharing and Firebase authentication, it provides a
+                                secure and reliable platform for you to connect with friends, family, and colleagues.
+                            </p>
+                            <!-- Add technologies you used to build the project -->
+                            <ol class="work-technologies">
+                                <li>React Native CLI</li>
+                                <li>Firebase</li>
+                                <li>RTDB/Storage</li>
+                                <li>Firebase Auth</li>
+                                <li>Zustand</li>
+                            </ol>
+
+                            <div class="work-links">
+                                <!-- Add url of project in href attribute -->
+                                <a href="https://github.com/thbiell/App-de-Mensagens" target="_blank" rel="noopener"
+                                    class="link">Explore this project</a>
+
+                                <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                                <a href="https://github.com/thbiell/App-de-Mensagens" target="_blank" rel="noopener"
+                                    title="Source code">
+                                    <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Update img src and alt attribute  -->
+
+                        <picture class="work-img">
+                            <img loading="lazy" src="assets/images/work/logoW.png" alt="agency elevation" />
+                        </picture>
+                    </div>
+                    <div class="work-box">
+                        <div class="work-textbox">
+                            <!-- Add your project title here -->
+                            <h3 class="h3">RESTful API with Spring Boot</h3>
+                            <!-- Add small description of your project  -->
+                            <p class="work-text">
+                                A RESTful API developed using Spring Boot in Java, featuring robust security measures
+                                including JWT token authentication, role-based access control, and data encryption.
+                            </p>
+                            <ol class="work-technologies">
+                                <li>Spring Boot</li>
+                                <li>Java</li>
+                                <li>Spring Security</li>
+                                <li>JWT Token Authentication</li>
+                            </ol>
+                            <div class="work-links">
+                                <!-- Add url of project in href attribute -->
+                                <a href="https://github.com/thbiell/Global" target="_blank" rel="noopener"
+                                    class="link">Explore this project</a>
+                                <a href="https://github.com/thbiell/Global" target="_blank" rel="noopener"
+                                    title="Source code">
+                                    <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work-img-border">
+                            <!-- Optionally, you can add an image border here -->
+                        </div>
+                    </div>
+
+                    <div class="work-box">
+                        <div class="work-textbox">
+                            <!-- Add your project title here -->
+                            <h3 class="h3">Genius Game (React Native Expo)</h3>
+                            <!-- Add small description of your project  -->
+                            <p class="work-text">
+                                An interactive memory and skill game built using React Native Expo. Test your knowledge
+                                and reflexes
+                                in this engaging game. Firebase is used for authentication and Firestore for
+                                leaderboards.
+                            </p>
+                            <ol class="work-technologies">
+                                <li>React Native Expo</li>
+                                <li>Firebase Authentication</li>
+                                <li>Firestore Database</li>
+                            </ol>
+                            <div class="work-links">
+                                <!-- Add url of project in href attribute -->
+                                <a href="https://github.com/thbiell/GeniusGame" target="_blank" rel="noopener"
+                                    class="link">Explore this project</a>
+                                <a href="https://github.com/thbiell/GeniusGame" target="_blank" rel="noopener"
+                                    title="Source code">
+                                    <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <picture class="work-img2">
+                            <img loading="lazy" src="assets/images/work/GeniusGame.png" alt="agency elevation" />
+                        </picture>
+                    </div>
+                    <div class="work-box">
+                        <div class="work-textbox">
+                            <!-- Add your project title here -->
+                            <h3 class="h3">Pokédex (React Native Expo)</h3>
+                            <!-- Add small description of your project  -->
+                            <p class="work-text">
+                                An pokédex for your pokémons.
+                            </p>
+                            <ol class="work-technologies">
+                                <li>React Native Expo</li>
+                                <li>Redux</li>
+                            </ol>
+                            <div class="work-links">
+                                <!-- Add url of project in href attribute -->
+                                <a href="https://github.com/thbiell/Pokedex" target="_blank" rel="noopener"
+                                    class="link">Explore this project</a>
+                                <a href="https://github.com/thbiell/Pokedex" target="_blank" rel="noopener"
+                                    title="Source code">
+                                    <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <picture class="work-img2">
+                            <img loading="lazy" src="assets/images/work/pokedex.png" alt="agency elevation" />
+                        </picture>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
+        <section class="skills">
+            <div class="container">
+                <h2 class="h2" id="skills">My Toolkit</h2>
+                <div class="skills-imgs">
+                    <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy"
+                        title="React">
+                    <img src="assets/images/skills/python.svg" alt="Python" class="skills-img" loading="lazy"
+                        title="Python">
+                    <img src="assets/images/skills/node-js.webp" alt="NodeJs" class="skills-img" loading="lazy"
+                        title="NodeJs">
+                    <img src="assets/images/skills/android.svg" alt="Android" class="skills-img" loading="lazy"
+                        title="Android">
+                    <img src="assets/images/skills/azure.svg" alt="Azure" class="skills-img" loading="lazy"
+                        title="Azure">
+                    <img src="assets/images/skills/next-js.webp" alt="NextJS" class="skills-img" loading="lazy"
+                        title="NextJS">
+                    <img src="assets/images/skills/oracle.svg" alt="Oracle" class="skills-img" loading="lazy"
+                        title="Oracle">
+                    <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+                    <img src="assets/images/skills/java.svg" alt="Java" class="skills-img" loading="lazy" title="Java">
+                    <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy"
+                        title="JavaScript">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact">
+            <div class="container">
+                <h2 class="h2" id="contact">Send Message</h2>
+                <div class="contact-content">
+                    <div class="contact-textbox">
+                        <!-- Please comment this component if you're not available for hire -->
+                        <strong href="#" class="hire-alert">
+                            <span class="indicator"></span>
+                            Available for hire
+                        </strong>
+                        <p class="contact-text">
+                            I'm a passionate full-stack developer with expertise spanning the realms of web and mobile applications. From crafting engaging user interfaces to architecting robust backend systems, I thrive on turning ideas into digital reality.
+                        </p>
+                        <p class="contact-text">
+                            My journey in software engineering has led me to embrace the intricacies of both frontend and backend development. I revel in tackling challenges and continuously seeking ways to optimize performance and accessibility.
+                        </p>
+                        <p>Email: thiago007gabriel@gmail.com</p>
+                    </div>
+                    <form action="#" class="contact-form" netlify>
+                        <div class="form-field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" required />
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required inputmode="email" />
+                        </div>
+                        <div class="form-field">
+                            <label for="message">How can I help you?</label>
+                            <textarea name="message" id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-cta">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Update href and src attributes -->
+                <nav>
+                    <ol class="footer-links">
+                        <li class="footer-link">
+                            <a title="GitHub" href="https://github.com/thbiell" target="_blank" rel="noopener"><img
+                                    loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" /></a>
+                        </li>
+                        <li class="footer-link">
+                            <a title="Codepen" href="https://leetcode.com/thiago007gabriel/" target="_blank"
+                                rel="noopener"><img loading="lazy" src="assets/images/social-links/leetcode.svg"
+                                    alt="Codepen" /></a>
+                        </li>
+                        <li class="footer-link">
+                            <a title="Linkedin" href="https://www.linkedin.com/in/thbiell/" target="_blank"
+                                rel="noopener"><img loading="lazy" src="assets/images/social-links/linkedin.svg"
+                                    alt="Linkedin" /></a>
+                        </li>
+                    </ol>
+                </nav>
+                <p class="footer-text">
+                    &copy; 2024 - Template designed & developed by <a target="_blank" rel="noopener"
+                        href="https://github.com/thbiell">Thiago Gabriel</a>
+                </p>
+                <label class="theme-switch" for="theme-switch">
+                    <span>Dark Theme</span>
+                    <input type="checkbox" id="theme-switch" role="switch" />
+                </label>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
